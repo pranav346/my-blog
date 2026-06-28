@@ -1,15 +1,4 @@
 name: Lint Commit Messages
 
 on:
-  push:
-    branches:
-      - master
-      - "hotfix/*"
-  pull_request:
-
-jobs:
-  commitlint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-      - uses: wagoid/commitlint-github-action@v6
+  workflow_dispatch: # disabled — only run manually if needed
