@@ -18,6 +18,22 @@ That's exactly the kind of problem Docker came to solve.
 
 ---
 
+## Why Did Docker Even Come to Exist?
+
+There's a phrase every developer has said at least once in their career:
+
+> **"It works on my machine."**
+
+You build something. It runs perfectly on your laptop. You push it to a server, or hand it to a teammate, and suddenly nothing works. Different OS, different versions, different environment.
+
+This used to be a genuine nightmare. Teams spent days just making sure everyone's machines were set up the same way. Servers had to be carefully maintained so they matched developer machines. One wrong package update and everything broke.
+
+Docker killed that problem. With Docker, you don't share code and *hope* the other person's machine is set up right. You share the entire environment —> code + dependencies + OS layer + config, all in one box.
+
+Now when someone says "it works on my machine," they can just ship their machine.
+
+---
+
 ## First, What Even Is a Container?
 
 Before Docker, let me explain containers in the most common way I can.
@@ -78,23 +94,7 @@ The app doesn't know or care what's on your actual machine. It only knows its ow
 
 ---
 
-## Why Did Docker Even Come to Exist?
-
-There's a phrase every developer has said at least once in their career:
-
-> **"It works on my machine."**
-
-You build something. It runs perfectly on your laptop. You push it to a server, or hand it to a teammate, and suddenly — nothing works. Different OS, different versions, different environment.
-
-This used to be a genuine nightmare. Teams spent days just making sure everyone's machines were set up the same way. Servers had to be carefully maintained so they matched developer machines. One wrong package update and everything broke.
-
-Docker killed that problem. With Docker, you don't share code and *hope* the other person's machine is set up right. You share the entire environment —> code + dependencies + OS layer + config, all in one box.
-
-Now when someone says "it works on my machine," they can just ship their machine.
-
----
-
-## But Wait  Does Docker Work for Everything?
+## But Wait Does Docker Work for Everything?
 
 Honestly? No. And this is something I wish someone had told me earlier.
 
@@ -120,39 +120,6 @@ So the rule of thumb:
 - **Mobile apps (React Native, Flutter)** → no Dockerfile, use NVMFVM for version management
 - **Web apps (React, Next.js)** → Docker is commonly used
 - **Backend (APIs, databases, services)** → Docker is almost always there
-
----
-
-## The Node Version Problem (You've Felt This)
-
-Okay, back to my embarrassing afternoon.
-
-I was working on two React projects at the same time:
-- **Project A** — an older React app that needs Node 16
-- **Project B** — a newer React app that needs Node 18
-
-On a normal machine, you can only have one "active" Node version at a time. So I'd switch to Project B, update Node, work fine — then switch back to Project A and it would break.
-
-**The NVM way**: [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm) solves this partially. You can do `nvm use 16` or `nvm use 18` and switch between versions manually. It's honestly great and I still use it.
-
-But here's what NVM *doesn't* solve:
-- What if your teammate doesn't have NVM set up?
-- What if you're deploying to a server?
-- What if Project A needs specific environment variables or a specific npm registry?
-- What if you're running 5 projects and keep forgetting to switch versions?
-
-This is where Docker shines. Each project gets its own container with the exact Node version baked in. You don't switch anything. You just start the container and work.
-
-```bash
-# Without Docker - you have to remember to switch
-nvm use 16
-npm start
-
-# With Docker - the container already knows what version it needs
-docker compose up
-```
-
-No thinking. No switching. No "why isn't this working."
 
 ---
 
