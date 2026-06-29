@@ -21,8 +21,8 @@ I'm a Senior Mobile Developer dedicated to building scalable mobile experiences.
 
 ## Publications & Guides
 
-- [Building a Fault-Tolerant Live Camera Streaming Player in Flutter](#)
-- [FCM Service Extension: Fixing Image Notifications on iOS](#)
+- [Building a Fault-Tolerant Live Camera Streaming Player in Flutter](https://medium.com/@pranav.tech06/building-a-fault-tolerant-live-camera-streaming-player-in-flutter-with-media-kit-28dcc0667b7a)
+- [FCM Service Extension: Fixing Image Notifications on iOS](https://medium.com/@pranav.tech06/how-to-fix-ios-push-notifications-with-images-fcm-notification-service-extension-d0ac3ac38995)
 
 ---
 
