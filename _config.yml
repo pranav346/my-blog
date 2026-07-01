@@ -97,7 +97,7 @@ theme_mode: # [light | dark]
 cdn: ""
 
 # the avatar on sidebar — place your photo at assets/img/avatar.jpg
-avatar: "https://ui-avatars.com/api/?name=Pranav&background=0a66c2&color=fff&size=200&rounded=true"
+avatar: "/assets/img/avatar.jpg"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -155,6 +155,8 @@ pwa:
     # shares the same domain name as the current website.
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
+
+future: true
 
 paginate: 10
 
