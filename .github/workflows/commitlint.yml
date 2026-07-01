@@ -1,4 +1,10 @@
 name: Lint Commit Messages
 
 on:
-  workflow_dispatch: # disabled — only run manually if needed
+  workflow_dispatch:
+
+jobs:
+  commitlint:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "commitlint disabled for personal blog"
