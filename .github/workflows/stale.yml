@@ -1,4 +1,10 @@
 name: "Close stale issues and PRs"
 
 on:
-  workflow_dispatch: # disabled — not needed for personal blog
+  workflow_dispatch:
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "stale workflow disabled for personal blog"
