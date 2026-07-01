@@ -35,7 +35,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Pranav
-  email: pranav.tech06@gmail.com
+  email: pranavlad643@gmail.com
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
     # The first element serves as the copyright owner's link
@@ -97,7 +97,7 @@ theme_mode: # [light | dark]
 cdn: ""
 
 # the avatar on sidebar — place your photo at assets/img/avatar.jpg
-avatar: "/assets/img/avatar.jpg"
+avatar: "https://ui-avatars.com/api/?name=Pranav&background=0a66c2&color=fff&size=200&rounded=true"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

@@ -1,6 +1,6 @@
 ---
 title: "Docker: Why I Finally Stopped Fighting My Own Machine"
-date: 2026-06-28 10:00:00 +0530
+date: 2026-07-01 10:00:00 +0530
 categories: [DevOps, Docker]
 tags: [docker, containers, developer-tools, nodejs, react-native]
 author: Pranav
