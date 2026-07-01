@@ -44,4 +44,4 @@ I bring a performance-first mindset to every project. I'm passionate about mento
 
 - **GitHub:** [github.com/pranav346](https://github.com/pranav346)
 - **LinkedIn:** [pranav-lad-16a343179](https://www.linkedin.com/in/pranav-lad-16a343179)
-- **Email:** pranav.tech06@gmail.com
+- **Email:** pranavlad643@gmail.com
